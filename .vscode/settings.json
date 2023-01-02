@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "ostream": "cpp",
+        "system_error": "c",
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
