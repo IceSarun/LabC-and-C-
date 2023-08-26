@@ -1,0 +1,24 @@
+run : clean main 
+	./main.out
+
+main : Person.o Student.o Teacher.o main.o
+	g++ Person.o Student.o Teacher.o TA.o main.o -o main.out
+
+Person.o:
+	g++ -c Person.cpp -o Person.o
+
+Student.o:
+	g++ -c Student.cpp -o Student.o
+
+Teacher.o:
+	g++ -c Teacher.cpp -o Teacher.o
+
+TA.o:
+	g++ -c TA.cpp -o TA.o
+
+
+main.o:
+	g++ -c main.cpp -o main.o
+
+clean:
+	rm -f *.o main.out
